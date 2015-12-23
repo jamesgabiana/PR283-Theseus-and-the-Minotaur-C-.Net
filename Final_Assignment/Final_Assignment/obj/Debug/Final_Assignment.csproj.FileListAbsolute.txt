@@ -1,0 +1,9 @@
+H:\C#\Final_Assignment\Final_Assignment\Final_Assignment\bin\Debug\Final_Assignment.exe.config
+H:\C#\Final_Assignment\Final_Assignment\Final_Assignment\bin\Debug\Final_Assignment.exe
+H:\C#\Final_Assignment\Final_Assignment\Final_Assignment\bin\Debug\Final_Assignment.pdb
+H:\C#\Final_Assignment\Final_Assignment\Final_Assignment\obj\Debug\Final_Assignment.csprojResolveAssemblyReference.cache
+H:\C#\Final_Assignment\Final_Assignment\Final_Assignment\obj\Debug\Final_Assignment.Form1.resources
+H:\C#\Final_Assignment\Final_Assignment\Final_Assignment\obj\Debug\Final_Assignment.Properties.Resources.resources
+H:\C#\Final_Assignment\Final_Assignment\Final_Assignment\obj\Debug\Final_Assignment.csproj.GenerateResource.Cache
+H:\C#\Final_Assignment\Final_Assignment\Final_Assignment\obj\Debug\Final_Assignment.exe
+H:\C#\Final_Assignment\Final_Assignment\Final_Assignment\obj\Debug\Final_Assignment.pdb

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4676E412-5BA9-4ABE-ACDF-14CC1CAE4113}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Final_Assignment</RootNamespace>
+    <AssemblyName>Final_Assignment</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlertOutput.cs" />
+    <Compile Include="BigTileEmpty.cs" />
+    <Compile Include="BigTileLeftWall.cs" />
+    <Compile Include="BigTilePosition.cs" />
+    <Compile Include="BigTileTopLeftWall.cs" />
+    <Compile Include="BigTileTopWall.cs" />
+    <Compile Include="FilerLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilerLoad.Designer.cs">
+      <DependentUpon>FilerLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilerSave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilerSave.Designer.cs">
+      <DependentUpon>FilerSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindOutsideWalls.cs" />
+    <Compile Include="DrawDot.cs" />
+    <Compile Include="DrawExit.cs" />
+    <Compile Include="DrawHWall.cs" />
+    <Compile Include="DrawMinotaur.cs" />
+    <Compile Include="DrawSpace.cs" />
+    <Compile Include="DrawTheseus.cs" />
+    <Compile Include="DrawVWall.cs" />
+    <Compile Include="FindBigTile.cs" />
+    <Compile Include="GameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForm.Designer.cs">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameMenuForm.Designer.cs">
+      <DependentUpon>GameMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IBigTile.cs" />
+    <Compile Include="ITME.cs" />
+    <Compile Include="LevelDesignMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelDesignMain.Designer.cs">
+      <DependentUpon>LevelDesignMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapPanel.cs" />
+    <Compile Include="NewMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewMapForm.Designer.cs">
+      <DependentUpon>NewMapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OutsideWallPos.cs" />
+    <Compile Include="ITile.cs" />
+    <Compile Include="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelDesignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelDesignForm.Designer.cs">
+      <DependentUpon>LevelDesignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapBuilder.cs" />
+    <Compile Include="OutsideBottomWallsPos.cs" />
+    <Compile Include="OutsideRightWallsPos.cs" />
+    <Compile Include="PlayByLevel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestPanel.cs" />
+    <Compile Include="TileIndex.cs" />
+    <Compile Include="TileScaler.cs" />
+    <EmbeddedResource Include="FilerLoad.resx">
+      <DependentUpon>FilerLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilerSave.resx">
+      <DependentUpon>FilerSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameMenuForm.resx">
+      <DependentUpon>GameMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelDesignMain.resx">
+      <DependentUpon>LevelDesignMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelDesignForm.resx">
+      <DependentUpon>LevelDesignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMapForm.resx">
+      <DependentUpon>NewMapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FilerTATM\FilerTATM.csproj">
+      <Project>{c3521b41-ae3f-42ac-b4fb-c25907d677d4}</Project>
+      <Name>FilerTATM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
